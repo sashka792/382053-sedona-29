@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Oleksandr Shyian](https://up.htmlacademy.ru/htmlcss/29/user/382053).
-* Наставник: `Неизвестно`.
+* Наставник: [Константин Черепанов] (https://htmlacademy.ru/profile/ccher).
 
 ---
 
