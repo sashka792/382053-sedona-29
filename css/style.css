@@ -1,0 +1,172 @@
+/* Variables */
+
+:root {
+    --primary-color: #81B3D2;
+    --primary-hover: #669EC0;
+    --primary-active: #5496BD;
+    --accent-color: #766357;
+    --accent-hover: #604E43;
+    --accent-active: #503E33;
+    --basic-white: #ffffff;
+    --basic-black: #000000;
+    --text-color: #333333;
+    --active-text: rgba(255, 255, 255, 0.3);
+}
+
+/* Global */
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: var(--text-color);
+    text-transform: uppercase;
+    background-color: var(--basic-white);
+}
+
+.page a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Button style */
+.primary {
+    background-color: var(--accent-color);
+    color: var(--basic-white);
+}
+
+.primary:hover,
+.primary:focus {
+    background-color: var(--accent-hover)
+}
+
+.primary:active{
+    background-color: var(--accent-active);
+    color: var(--active-text);
+}
+
+.secondary {
+    background-color: var(--primary-color );
+    color: var(--basic-white);
+}
+
+.secondary:hover,
+.secondary:focus {
+    background-color: var(--primary-hover);
+}
+
+.secondary:active {
+    background-color: var(--primary-active);
+    opacity: var(--active-text);
+}
+/* Hide elements class*/
+
+.visible-hiden {
+    display: none;
+}
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation__link {
+    color: var(--basic-black);
+}
+
+.site-navigation__link:hover, .site-navigation__link:focus {
+    color: var(--primary-color);
+}
+
+.site-navigation__link:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+}
+
+.site-navigation__link-current {
+    color: var(--accent-color);
+}
+
+/* Main */
+
+.advantages-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.advantages-desc {
+    line-height: 26px;
+}
+
+.advantage-item h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.advantage-title_white,
+.advantage-num_white,
+.advantage-desc_white {
+    color: var(--basic-white);
+}
+.infrastructure-list, 
+.advantage-list {
+    list-style: none;
+}
+
+/* Registration */
+
+.registration-headline {
+    font-size: 30px;
+    line-height: 24px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+/* Footer */
+
+.main-footer {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.footer-contacts p {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: var(--basic-black);
+}
+
+.footer-phone {
+    color: inherit;
+}
+
+/* Social button */
+
+.footer-social ul {
+    list-style: none;
+}
+
+/* Copyright */
+
+.copyright-text {
+    line-height: 26px;
+}
+
