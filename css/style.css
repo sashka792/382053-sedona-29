@@ -126,6 +126,7 @@ img {
 .advantage-num_white,
 .advantage-desc_white {
     color: var(--basic-white);
+    background-color: var(--primary-color);
 }
 .infrastructure-list, 
 .advantage-list {

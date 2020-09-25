@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -7,32 +7,73 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="page-body">
 
-  <header>
-    <nav>
-      <a href="index.html">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo" href="index.html">
         <img src="https://via.placeholder.com/138x70" width="138" height="70" alt="Логотип города Седона">
       </a>
-      <ul>
-        <li><a href="blank.html">Информация</a></li>
-        <li><a href="blank.html">Фото и видео</a></li>
-        <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="hotels.html" active>Гостиницы</a></li>
+      <ul class="site-navigation">
+        <li><a class="site-navigation__link" href="blank.html">Информация</a></li>
+        <li><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
+        <li><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
+        <li><a class="site-navigation__link" href="hotels.html" active>Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Фильтр поиска гостиницы в городке Седоне</h2>
-      <ul>
-        <li>Бассейн</li>
-      </ul>
+  <main class="container">
+    <section class="search">
+      <h2 class="visible-hiden">Фильтр поиска гостиницы в городке Седоне</h2>
+      <!-- Здесь будет форма с фильтрами для поиска -->
     </section>
 
-    <section>
-      <h2>Результаты поиска гостиниц в городке Седона</h2>
+    <section class="results">
+      <h2 class="visible-hiden">Результаты поиска гостиниц в городке Седона</h2>
+      <p>Найдено: 3</p>
+      <p>Сортировка:</p>
+      <ul>
+        <li><a href="">По цене</a></li>
+        <li><a href="">По типу</a></li>
+        <li><a href="">По рейтингу</a></li>
+      </ul>
+      <div>
+        <button></button>
+        <button></button>
+      </div>
+      <ul class="results-list">
+        <li class="result-item">
+          <img class="result-item__pic" src="https://via.placeholder.com/135x90" alt="Amara Resort & Spa">
+          <h3 class="result-item__name">Amara Resort & Spa</h3>
+          <p class="result-item__type">Гостиница</p>
+          <p class="result-item__price">От 4000 Р.</p>
+          <a class="result-item__info secondary" href="blank.html">Подробнее</a>
+          <a class="result-item__registration primary" href="blank.html">Забронировать</a>
+          <div class="result-item__evaluation"></div>
+          <p class="result-item__rating">Рейтинг: 8,5</p>
+        </li>
+        <li class="result-item">
+          <img class="result-item__pic" src="https://via.placeholder.com/135x90" alt="Desert Quail Inn">
+          <h3 class="result-item__name">Desert Quail Inn</h3>
+          <p class="result-item__type">Мотель</p>
+          <p class="result-item__price">От 3000 Р.</p>
+          <a class="result-item__info secondary" href="blank.html">Подробнее</a>
+          <a class="result-item__registration primary" href="blank.html">Забронировать</a>
+          <div class="result-item__evaluation"></div>
+          <p class="result-item__rating">Рейтинг: 8,9</p>
+        </li>
+        <li class="result-item">
+          <img class="result-item__pic" src="https://via.placeholder.com/135x90" alt="Villas at Poco Diablo">
+          <h3 class="result-item__name">Villas at Poco Diablo</h3>
+          <p class="result-item__type">Апартаменты</p>
+          <p class="result-item__price">От 2000 Р.</p>
+          <a class="result-item__info secondary" href="blank.html">Подробнее</a>
+          <a class="result-item__registration primary" href="blank.html">Забронировать</a>
+          <div class="result-item__evaluation"></div>
+          <p class="result-item__rating">Рейтинг: 9,2</p>
+        </li>
+      </ul>
     </section>
   </main>
 
