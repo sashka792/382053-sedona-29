@@ -18,12 +18,13 @@
         <li><a class="site-navigation__link" href="blank.html">Информация</a></li>
         <li><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
         <li><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
-        <li><a class="site-navigation__link" href="hotels.html" active>Гостиницы</a></li>
+        <li><a class="site-navigation__link active" href="hotels.html">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
 
   <main class="container">
+    <!-- background-image добавил в стилях через класc  -->
     <section class="search">
       <h2 class="visible-hiden">Фильтр поиска гостиницы в городке Седоне</h2>
       <!-- Здесь будет форма с фильтрами для поиска -->
@@ -31,16 +32,16 @@
 
     <section class="results">
       <h2 class="visible-hiden">Результаты поиска гостиниц в городке Седона</h2>
-      <p>Найдено: 3</p>
-      <p>Сортировка:</p>
+      <p class="results__caption">Найдено: 3</p>
+      <p class="results__sorting-headline">Сортировка:</p>
       <ul>
-        <li><a href="">По цене</a></li>
-        <li><a href="">По типу</a></li>
-        <li><a href="">По рейтингу</a></li>
+        <li><a class="results__sorting-item results-active">По цене</a></li>
+        <li><a class="results__sorting-item">По типу</a></li>
+        <li><a class="results__sorting-item">По рейтингу</a></li>
       </ul>
-      <div>
-        <button></button>
-        <button></button>
+      <div class="buttons">
+        <a class="results__sorting-button sort-up"></a>
+        <a class="results__sorting-button sort-down"></a>
       </div>
       <ul class="results-list">
         <li class="result-item">
@@ -77,28 +78,28 @@
     </section>
   </main>
 
-  <footer>
-    <section>
-      <h2>Контакты</h2>
+  <footer class="page-footer main-footer">
+    <section class="footer-contacts">
+      <h2 class="visible-hiden">Контакты</h2>
       <p>
         #VISITSEDONA<br>
-        ТЕЛ: <a href="tel:+74956660166">+7(495) 666-01-66</a>
+        ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
       </p>
     </section>
-    <section>
-      <h2>Социальные сети</h2>
+    <section class="footer-social">
+      <h2 class="visible-hiden">Социальные сети</h2>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Ютуб</a></li>
+        <li><a class="social-link social-link_twitter secondary" href="#"></a></li>
+        <li><a class="social-link social-link_fb secondary" href="#"></a></li>
+        <li><a class="social-link social-link_yt secondary" href="#"></a></li>
       </ul>
     </section>
-    <section>
-      <h2>Разработчик</h2>
-      <p>
+    <section class="footer-copyright">
+      <h2 class="visible-hiden">Разработчик</h2>
+      <p class="copyright-text">
         Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="https://via.placeholder.com/115x41" alt="Логотип HTML Academy">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
     </section>
