@@ -207,6 +207,11 @@ img {
 }
 
 /* Hotels page */
+.search {
+    background: url(../img/background-hotels.png) no-repeat;
+    height: 217px;
+}
+
 .results__caption {
     font-weight: 700;
     font-size: 21px;
