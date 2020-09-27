@@ -132,7 +132,7 @@ img {
     color: var(--basic-black);
 }
 
-/* .infrastructure-item__title_motel::before {
+.infrastructure-item__title_motel::before {
     content: url(../img/motel.svg);
 }
 
@@ -142,7 +142,7 @@ img {
 
 .infrastructure-item__title_gift::before {
     content: url(../img/gift.svg);
-} */
+}
 
 .advantage-title_white, .advantage-num_white, .advantage-desc_white {
     color: var(--basic-white);
@@ -183,6 +183,21 @@ img {
 
 .footer-social ul {
     list-style: none;
+}
+
+.social-link_twitter {
+    content: url(../img/twitter.svg);
+    padding: 16px 14px;
+}
+
+.social-link_fb {
+    content: url(../img/fb-icon.svg);
+    padding: 13px 17px;
+}
+
+.social-link_yt {
+    content: url(../img/youtube.svg);
+    padding: 16px 13px;
 }
 
 /* Copyright */
