@@ -27,10 +27,8 @@
 
   <main class="container">
     <section class="welcome">
-      <h1 class="visible-hiden">City of Sedona</h1>
-      <img src="img/1-welcome.svg" alt="Welcome">
-      <img src="img/2-gergeous.svg" alt="to the gorgeous">
-      <img src="img/3-sedona.svg" alt="Sedona. Because the Grand Canyon sucks">
+      <h1 class="visible-hiden ">City of Sedona</h1>
+      <img src="img/welcome.svg" class="welcome__title" alt="Welcome to the gorgeousю Sedona. Because the Grand Canyon sucks">
     </section>
 
     <section class="advantages">
@@ -39,39 +37,43 @@
         заслуживающий большего!</h3>
       <p class="advantages-desc">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 
-      <article сlass="advantage-item">
-        <h3 class="advantage-title advantage-title_white">Настоящий городок</h3>
-        <p class="advantage-num advantage-num_white">— №1 —</p>
-        <p class="advantage-desc advantage-desc_white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+      <article class="advantage-item_1">
+        <div class="advantage-item__text">
+          <h3 class="advantage-title advantage-title_white">Настоящий<br>городок</h3>
+          <p class="advantage-num advantage-num_white">— №1 —</p>
+          <p class="advantage-desc advantage-desc_white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+        </div>
         <img src="img/city.jpg" width="800" height="256" alt="Фотография города Седона">
       </article>
 
-      <article сlass="advantage-item">
+      <article>
         <h2 class="visible-hiden">Инфраструктура города Седона</h2>
         <ul class="infrastructure-list">
-          <li class="infrastructure-item">
+          <li>
             <h3 class="infrastructure-item__title infrastructure-item__title_motel">Жильё</h3>
             <p class="infrastructure-item__desc">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="infrastructure-item">
+          <li>
             <h3 class="infrastructure-item__title infrastructure-item__title_food">Еда</h3>
             <p class="infrastructure-item__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="infrastructure-item">
+          <li>
             <h3 class="infrastructure-item__title infrastructure-item__title_gift">Сувениры</h3>
             <p class="infrastructure-item__desc">Не только китайского, но и местного производства!</p>
           </li>
         </ul>
       </article>
 
-      <article сlass="advantage-item">
+      <article class="advantage-item_2">
         <img src="img/devils-bridge.jpg" width="800" height="256" alt="Фотография Мост Дьявола">
-        <h3 class="advantage-title advantage-title_white">Там есть Мост дьявола</h3>
-        <p class="advantage-num advantage-num_white">— №2 —</p>
-        <p class="advantage-desc advantage-desc_white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        <div class="advantage-item__text">
+          <h3 class="advantage-title advantage-title_white">Там есть<br>Мост дьявола</h3>
+          <p class="advantage-num advantage-num_white">— №2 —</p>
+          <p class="advantage-desc advantage-desc_white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
       </article>
 
-      <article сlass="advantage-item advantage-item_row">
+      <article>
         <h2 class="visible-hiden">Другие преимущества города</h2>
         <ul class="advantage-list">
           <li class="advantage-list__item">
@@ -96,7 +98,7 @@
     <section class="registration-form">
       <h2 class="visible-hiden">Форма регистрации гостиницы в Седоне</h2>
       <p class="registration-headline">Заинтересовались?</p>
-      <p class="registration-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="registration-info">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в
         седоне</p>
       <h3 class="registration-button primary">Поиск гостиницы в Седоне</h3>
       <!-- Здесь будет форма поиска гостиницы -->
@@ -105,30 +107,32 @@
   </main>
 
   <footer class="page-footer main-footer">
-    <section class="footer-contacts">
-      <h2 class="visible-hiden">Контакты</h2>
-      <p>
-        #VISITSEDONA<br>
-        ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
-      </p>
-    </section>
-    <section class="footer-social">
-      <h2 class="visible-hiden">Социальные сети</h2>
-      <ul>
-        <li><a class="social-link social-link_twitter secondary" href="#"></a></li>
-        <li><a class="social-link social-link_fb secondary" href="#"></a></li>
-        <li><a class="social-link social-link_yt secondary" href="#"></a></li>
-      </ul>
-    </section>
-    <section class="footer-copyright">
-      <h2 class="visible-hiden">Разработчик</h2>
-      <p class="copyright-text">
-        Website by
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
-        </a>
-      </p>
-    </section>
+    <div class="container">
+      <section class="footer-contacts">
+        <h2 class="visible-hiden">Контакты</h2>
+        <p>
+          #VISITSEDONA<br>
+          ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a>
+        </p>
+      </section>
+      <section class="footer-social">
+        <h2 class="visible-hiden">Социальные сети</h2>
+        <ul>
+          <li><a class="social-link social-link_twitter secondary" href="#"></a></li>
+          <li><a class="social-link social-link_fb secondary" href="#"></a></li>
+          <li><a class="social-link social-link_yt secondary" href="#"></a></li>
+        </ul>
+      </section>
+      <section class="footer-copyright">
+        <h2 class="visible-hiden">Разработчик</h2>
+        <p class="copyright-text">
+          Website by
+          <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
+          </a>
+        </p>
+      </section>
+    </div>
   </footer>
 
 </body>

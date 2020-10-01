@@ -32,6 +32,11 @@ body {
     text-decoration: none;
 }
 
+p, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -77,17 +82,39 @@ img {
     display: none;
 }
 
+/* Grid */
+.page {
+    height: 100%;
+}
+
+.page-body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+  }
+
 /* Main navigation */
 
 .main-navigation {
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
     background-color: var(--basic-white);
 }
+.main-header-logo{
+    justify-self: center;
+}
 
 .site-navigation {
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -110,23 +137,54 @@ img {
 
 /* Main */
 
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
 .welcome {
     background: url(../img/background-photo.jpg) no-repeat;
     height: 509px;
 }
 
+.welcome__title {
+    padding-top: 77px;
+    text-align: center;
+}
+
+.advantage-item_1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.advantage-item_2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.advantage-item__text {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
 .advantages-title {
+    margin: 43px 0 17px;
+}
+
+.advantages-title, 
+.infrastructure-item__title {
     font-size: 21px;
-    line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
 }
 
 .advantages-desc {
     line-height: 26px;
+    margin-bottom: 51px;
 }
 
-.advantage-item h3 {
+.advantage-title {
     font-size: 21px;
     font-weight: 700;
     color: var(--basic-black);
@@ -134,23 +192,57 @@ img {
 
 .infrastructure-item__title_motel::before {
     content: url(../img/motel.svg);
+    display: block;
+    padding-bottom: 28px;
 }
 
 .infrastructure-item__title_food::before {
     content: url(../img/food.svg);
+    display: block;
+    padding-bottom: 28px;
 }
 
 .infrastructure-item__title_gift::before {
     content: url(../img/gift.svg);
+    display: block;
+    padding-bottom: 28px;
 }
 
-.advantage-title_white, .advantage-num_white, .advantage-desc_white {
+.advantage-title {
+    padding: 47px 0px 25px;
+}
+
+.advantage-desc {
+    padding: 23px 45px 0;
+}
+
+.advantage-title_white, 
+.advantage-num_white, 
+.advantage-desc_white {
     color: var(--basic-white);
     background-color: var(--primary-color);
 }
 
-.infrastructure-list, .advantage-list {
+.infrastructure-list, 
+.advantage-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
     list-style: none;
+}
+
+.infrastructure-list {
+    padding: 60px 0 82px;
+}
+
+.infrastructure-item__title {
+    padding-bottom: 25px;
+}
+
+.advantage-list {
+    background-color: #eeeeee;
+    padding: 0px 0 54px;
 }
 
 /* Registration */
@@ -160,12 +252,25 @@ img {
     line-height: 24px;
     font-weight: 700;
     color: var(--basic-black);
+    padding: 58px 0 35px;
 }
 
+.registration-button {
+    display: inline-block;
+    padding: 30px 140px;
+    margin: 50px 0 0;
+    cursor: pointer;
+}
 /* Footer */
 
 .main-footer {
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.9);   
+    padding: 23px 0 36px;
+}
+
+.main-footer .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .footer-contacts p {
@@ -183,6 +288,8 @@ img {
 
 .footer-social ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .social-link_twitter {
@@ -207,10 +314,6 @@ img {
 }
 
 /* Hotels page */
-.search {
-    background: url(../img/background-hotels.png) no-repeat;
-    height: 217px;
-}
 
 .results__caption {
     font-weight: 700;
@@ -269,9 +372,23 @@ img {
 .result-item__name:active {
     opacity: 0.3;
 }
+.evaluation-list {
+    list-style: none;
+}
+
+.evaluation-item{
+    background: url(../img/rating-star.svg) no-repeat;
+    width: 18px;
+    height: 17px;
+}
 
 .result-item__rating {
     color: #666666;
     background-color: #F2F2F2;
     display: inline;
+}
+
+.advantage-item_1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
