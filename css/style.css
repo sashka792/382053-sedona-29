@@ -101,18 +101,13 @@ img {
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
-.shadow-wrapper {
-    width: 1200px;
-    margin: 0 auto;
-    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-}
+
 /* Main navigation */
 
 .main-navigation {
     position: relative;
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
     font-size: 14px;
     line-height: 26px;
     font-weight: 700;
@@ -129,6 +124,7 @@ img {
 
 .site-navigation {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
     margin: 0;
@@ -136,17 +132,18 @@ img {
     list-style: none;
 }
 
-.site-navigation li:nth-child(1) {
-    margin-left: -10px;
+.site-navigation li:first-child + li {
+    margin-left: -12px;
 }
 
-.site-navigation li:nth-child(2) {
-    margin-right: 275px;
+.site-navigation li:nth-child(3) {
+    margin-left: auto;
 }
+
 .site-navigation__link {
     color: var(--basic-black);
     display: block;
-    padding: 15px 52px;
+    margin: 14px 73px 16px;
 }
 
 .site-navigation__link:hover, 
@@ -168,9 +165,9 @@ img {
 .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
     padding-left: 0px;
     text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .welcome {
@@ -194,12 +191,13 @@ img {
     padding-top: 43px;
 }
 
-.advantage-item_1 {
+.advantage-item_1,
+.advantage-item_2 {
     display: flex;
 }
 
-.advantage-item_2 {
-    display: flex;
+.advantage-item_2 h3{
+    padding-top: 50px;
 }
 .advantage-item__text {
     background-color: var(--primary-color);
@@ -210,7 +208,7 @@ img {
 .advantage-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    /* grid-gap: 10px; */
     margin: 0;
     list-style: none; 
 }
@@ -280,11 +278,15 @@ img {
     background-color: var(--primary-color);
 }
 
+.advantage-title_white {
+    padding-bottom: 27px;
+}
+
 .infrastructure-list li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 45px;
+    padding: 0 55px;
 }
 
 .infrastructure-item__title {
@@ -342,21 +344,67 @@ img {
     justify-content: space-between;
     width: 458px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
-input[type='date'] {
+input::placeholder {
+    color: #000;
+    padding-left: 3px;
+}
+
+input[type='text'] {
     outline: none;
     font-weight: 700;
     line-height: 26px;
+    font-size: 14px;
     background-color: #F2F2F2;
     border: none;
     width: 333px;
-    padding: 6px 0px 6px 13px;
+    padding: 3px 0px 4px 8px;
     margin-left: 20px;
+    border: 2px solid transparent;
 }
+
+input[type='text']:hover {
+    background-color: #EBEBEB;
+}
+
+input[type='text']:focus {
+    background-color: transparent;
+    border: 2px solid #E5E5E5;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+  -moz-appearance: textfield;
+}
+
+/* input[type='date']::-webkit-calendar-picker-indicator {
+    content: '';
+    width: 21px;
+    height: 23px;
+    display: block;
+    background: url(../img/calendar.svg) no-repeat;
+} */
+
+.calendar-icon {
+    position: absolute;
+    right: 65px;
+}
+
+.registration-item:hover path,
+.registration-item:focus path {
+    fill: var(--basic-black);
+}
+
+.registration-item:active path {
+    fill: var(--primary-color);
+}
+
 .guest-num {
     display: flex;
 }
+
 .guest-num p {
     justify-content: stretch;
     width: 226px;
@@ -371,13 +419,50 @@ input[type='date'] {
 }
 
 input[type='number'] {
+    text-align: center;
     outline: none;
     font-weight: 700;
     line-height: 26px;
     background-color: #F2F2F2;
     border: none;
-    width: 101px;
-    padding: 6px 0px 6px 13px;
+    width: 114px;
+    padding: 6px 0px 6px 0px;
+}
+
+.registration-item svg {
+    position: absolute;
+}
+
+.adults-minus {
+    left: 180px;
+}
+
+.adults-plus {
+    left: 256px;
+}
+
+.children-minus {
+    right: 143px;
+}
+
+.children-plus {
+    right: 68px;
+}
+
+/* Remove arrow */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
 }
 
 .registration-form_find {
@@ -385,23 +470,31 @@ input[type='number'] {
     font-weight: 700;
     font-size: 21px;
     text-transform: uppercase;
-    margin-top: 24px;
+    margin-top: 25px;
     border: none;
-    padding: 16px 195px;    
+    padding: 17px 196px;    
 }
 /* Footer */
 
 .main-footer {
     background: rgba(255, 255, 255, 0.9);   
-    padding: 23px 0 36px;
     width: 1200px;
     margin: 0 auto;
+    margin-top: -125px;
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    column-gap: 50px;
+    justify-items: center;
+}
+ 
+.footer-contacts,
+.footer-social,
+.footer-copyright {
+    align-self: center;
 }
 
-.main-footer .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+.footer-contacts {
+    margin-top: -20px;
 }
 
 .footer-contacts p {
@@ -409,17 +502,18 @@ input[type='number'] {
     line-height: 26px;
     font-weight: 700;
     color: var(--basic-black);
+    text-align: center;
 }
 
 .footer-phone {
     color: inherit;
+    padding-top: 9px;
 }
 
 /* Social button */
 
 .footer-social ul {
     list-style: none;
-    margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
