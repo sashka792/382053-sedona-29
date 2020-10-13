@@ -10,22 +10,24 @@
 </head>
 
 <body class="page-body">
+  <div class="shadow-wrapper">
+    <header class="main-header">
+  
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a class="site-navigation__link" href="blank.html">Информация</a></li>
+          <li><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
+          <li><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
+          <li><a class="site-navigation__link" href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
 
-  <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
-      </a>
-      <ul class="site-navigation">
-        <li><a class="site-navigation__link" href="blank.html">Информация</a></li>
-        <li><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
-        <li><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
-        <li><a class="site-navigation__link" href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
+    </header>
 
-  <main class="container">
+    <main class="container">
     <section class="welcome">
       <h1 class="vissually-hiden ">City of Sedona</h1>
       <img src="img/welcome.svg" class="welcome__title" alt="Welcome to the gorgeousю Sedona. Because the Grand Canyon sucks">
@@ -89,24 +91,46 @@
           <li class="advantage-list__item">
             <h3 class="advantage-title">Мало туристов</h3>
             <p class="advantage-num">— №5 —</p>
-            <p class="advantage-desc">Большинство едет в гранд каньон и толпится там</p>
+            <p class="advantage-desc">Большинство едет в гранд каньон<br> и толпится там</p>
           </li>
         </ul>
       </article>
     </section>
 
-    <section class="registration-form">
+    <section class="registration">
       <h2 class="vissually-hiden">Форма регистрации гостиницы в Седоне</h2>
       <p class="registration-headline">Заинтересовались?</p>
-      <p class="registration-info">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в
-        седоне</p>
+      <p class="registration-info">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие 
+        предложения гостиниц в седоне</p>
       <h3 class="registration-button primary">Поиск гостиницы в Седоне</h3>
-      <!-- Здесь будет форма поиска гостиницы -->
+      <!-- Форма поиска гостиницы -->
+      <form class="registration-form" action="" method="get">
+        <p class="registration-item">
+          <label for="in-date">Дата заезда:</label>
+          <input type="date" name="check-in" id="in-date">
+        </p>
+        <p class="registration-item">
+          <label for="out-date">Дата выезда:</label>
+          <input type="date" name="check-out" id="out-date">
+        </p>
+        
+        <div class="guest-num">
+          <p class="registration-item">
+            <label class="adults" for="adults-num">Взрослые:</label> 
+            <input type="number" name="adults" value="2" id="adults-num">
+          </p>
+          <p class="registration-item">
+            <label class="children" for="children-num">Дети: </label>
+            <input type="number" name="children" value="0" id="children-num">
+          </p>
+        </div>
+        <button class="registration-form_find secondary">Найти</button>
+      </form>
       <img src="img/map.jpg" width="1200" height="594" alt="Карта местоположения города">
     </section>
-  </main>
+    </main>
 
-  <footer class="page-footer main-footer">
+    <footer class="page-footer main-footer">
     <div class="container">
       <section class="footer-contacts">
         <h2 class="vissually-hiden">Контакты</h2>
@@ -133,8 +157,8 @@
         </p>
       </section>
     </div>
-  </footer>
-
+    </footer>
+  </div>
 </body>
 
 </html>
