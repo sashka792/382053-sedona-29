@@ -30,7 +30,7 @@
       <h2 class="vissually-hiden">Фильтр поиска гостиницы в городке Седоне</h2>
       <!-- Здесь будет форма с фильтрами для поиска -->
       <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="filters-infrastructure">
+        <fieldset>
           <legend>Инфраструктура:</legend>
           <ul class="infastructure-filter">
             <li class="filter-item">
@@ -47,7 +47,7 @@
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filters-housing">
+        <fieldset>
           <legend>Тип жилья:</legend>
           <ul class="type-filter">
             <li class="filter-item">
@@ -83,7 +83,7 @@
               <div class="toggle toggle-max" tabindex="0"></div>
             </div>
           </div>
-          <button class="price-btn">Показать</button>
+          <button class="price-btn" type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -99,18 +99,20 @@
           <li><a class="results__sorting-item">По рейтингу</a></li>
         </ul>
         <div class="buttons-wrapper">
-          <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
-          <svg width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
+          <svg class="result-up" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
+          <svg class="result-down" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
         </div>
       </div>
       
       <ul class="results-list">
         <li class="result-item">
-          <img class="result-item__pic" src="img/Amara-resort.jpg" alt="Amara Resort & Spa">
+          <img class="result-item__pic" src="img/amara-resort.jpg" alt="Amara Resort & Spa">
           <div class="result-item-wrap">
             <h3 class="result-item__name">Amara Resort & Spa</h3>
-            <p class="result-item__type">Гостиница</p>
-            <p class="result-item__price">От 4000 Р.</p>
+            <div class="result-info">
+              <span class="result-item__type">Гостиница</span>
+              <span class="result-item__price">От 4000 Р.</span>
+            </div>
             <a class="result-item__info secondary" href="blank.html">Подробнее</a>
             <a class="result-item__registration primary" href="blank.html">Забронировать</a>
           </div>
@@ -127,11 +129,13 @@
          
         </li>
         <li class="result-item">
-          <img class="result-item__pic" src="img/Desert-Quail.jpg" alt="Desert Quail Inn">
+          <img class="result-item__pic" src="img/desert-Quail.jpg" alt="Desert Quail Inn">
           <div class="result-item-wrap">
             <h3 class="result-item__name">Desert Quail Inn</h3>
-            <p class="result-item__type">Мотель</p>
-            <p class="result-item__price">От 3000 Р.</p>
+            <div class="result-info">
+              <span class="result-item__type">Мотель</span>
+              <span class="result-item__price">От 3000 Р.</span>
+            </div>
             <a class="result-item__info secondary" href="blank.html">Подробнее</a>
             <a class="result-item__registration primary" href="blank.html">Забронировать</a>
           </div>
@@ -147,11 +151,13 @@
           
         </li>
         <li class="result-item">
-          <img class="result-item__pic" src="img/Villas.jpg" alt="Villas at Poco Diablo">
+          <img class="result-item__pic" src="img/villas.jpg" alt="Villas at Poco Diablo">
           <div class="result-item-wrap">
             <h3 class="result-item__name">Villas at Poco Diablo</h3>
-            <p class="result-item__type">Апартаменты</p>
-            <p class="result-item__price">От 2000 Р.</p>
+            <div class="result-info">
+              <span class="result-item__type">Апартаменты</span>
+              <span class="result-item__price">От 2000 Р.</span>
+            </div>
             <a class="result-item__info secondary" href="blank.html">Подробнее</a>
             <a class="result-item__registration primary" href="blank.html">Забронировать</a>
           </div>
