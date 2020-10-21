@@ -10,24 +10,82 @@
 <body class="page-body">
 
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
-      </a>
-      <ul class="site-navigation">
-        <li><a class="site-navigation__link" href="blank.html">Информация</a></li>
-        <li><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
-        <li><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
-        <li><a class="site-navigation__link site-navigation__link-current" href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="138" height="70" alt="Логотип города Седона">
+        </a>
+        <ul class="site-navigation">
+          <li><a class="site-navigation__link" href="blank.html">Информация</a></li>
+          <li><a class="site-navigation__link" href="blank.html">Фото и видео</a></li>
+          <li><a class="site-navigation__link" href="blank.html">Карта штата</a></li>
+          <li><a class="site-navigation__link site-navigation__link-current" href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
     <section class="search">
       <h2 class="vissually-hiden">Фильтр поиска гостиницы в городке Седоне</h2>
-      <img src="img/background-hotels.jpg" width="1200" height="217" alt="Задний фон">
       <!-- Здесь будет форма с фильтрами для поиска -->
+      <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="filters-infrastructure">
+          <legend>Инфраструктура:</legend>
+          <ul class="infastructure-filter">
+            <li class="filter-item">
+              <input class="vissually-hiden filter-input" type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-item">
+              <input class="vissually-hiden filter-input" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-item">
+              <input class="vissually-hiden filter-input" type="checkbox" name="wifi" id="filter-wifi">
+              <label for="filter-wifi">Wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filters-housing">
+          <legend>Тип жилья:</legend>
+          <ul class="type-filter">
+            <li class="filter-item">
+              <input class="vissually-hiden filter-input" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-item">
+              <input class="vissually-hiden filter-input" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-item">
+              <input class="vissually-hiden filter-input" type="checkbox" name="suit" id="filter-suit" checked>
+              <label for="filter-suit">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filters-price">
+          <legend>Стоимость в сутки (Р):</legend>
+          <div class="price-filter">
+            <div class="price-range">
+              <p class="price-min">
+                от <span class="price-min__num">0</span>
+              </p>
+              <p class="price-max">
+                до <span class="price-max__num">3000</span>
+              </p>
+            </div>
+            <div class="price-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+            </div>
+          </div>
+          <button class="price-btn">Показать</button>
+        </fieldset>
+      </form>
     </section>
 
     <section class="results">
@@ -105,12 +163,10 @@
             </ul>
             <p class="result-item__rating">Рейтинг: 9,2</p>
           </div>
-          
         </li>
       </ul>
     </section>
   </main>
-
   <footer class="page-footer">
     <section class="footer-contacts">
       <h2 class="vissually-hiden">Контакты</h2>
@@ -120,9 +176,9 @@
     <section class="footer-social">
       <h2 class="vissually-hiden">Социальные сети</h2>
       <ul>
-        <li><a class="social-link social-link_twitter secondary" href="#"></a></li>
-        <li><a class="social-link social-link_fb secondary" href="#"></a></li>
-        <li><a class="social-link social-link_yt secondary" href="#"></a></li>
+        <li><a class="social-link_twitter secondary" href="#"></a></li>
+        <li><a class="social-link_fb secondary" href="#"></a></li>
+        <li><a class="social-link_yt secondary" href="#"></a></li>
       </ul>
     </section>
     <section class="footer-copyright">
