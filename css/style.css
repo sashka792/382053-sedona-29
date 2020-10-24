@@ -559,7 +559,7 @@ input::-webkit-inner-spin-button {
     display: grid;
     grid-template-columns: max-content max-content 1fr;
     column-gap: 110px;
-    padding: 25px 71px 10px 68px;
+    padding: 25px 71px 10px 70px;
 }
 
 .filters-form fieldset {
@@ -579,7 +579,7 @@ input::-webkit-inner-spin-button {
 .infastructure-filter,
 .type-filter {
     padding: 0;
-    margin: 26px 0 0 2px;
+    margin: 26px 0 0 0px;
     list-style: none;
 }
 
@@ -588,6 +588,10 @@ input::-webkit-inner-spin-button {
 .filter-item {
     margin-bottom: 25px;
     padding-left: 40px;
+}
+
+.type-filter li {
+    padding-left: 44px;
 }
 
 .filter-input + label::before {
@@ -644,7 +648,7 @@ input::-webkit-inner-spin-button {
 }
 
 .price-range p {
-    padding-left: 15px;
+    padding: 0px 0px 0 15px;
 }
 
 .price-min {
@@ -714,7 +718,7 @@ input::-webkit-inner-spin-button {
     border: 2px solid white;
     border-radius: 2px;
     margin: 33px 0 0 85px;
-    padding: 6px 34px 8px 33px;
+    padding: 6px 34px 10px 33px;
     display: flex;
     flex-wrap: wrap;
     outline: none;
@@ -821,7 +825,7 @@ input::-webkit-inner-spin-button {
     display: grid;
     grid-template-columns: 135px 1fr max-content;
     column-gap: 29px;
-    margin: 0 73px 0 73px;
+    margin: 0 73px 0px 73px;
     padding: 30px 0 25px;
 }
 
@@ -874,8 +878,12 @@ input::-webkit-inner-spin-button {
     margin-right: 2px;
 }
 
-.result-item-wrap a {
-    padding: 4px 17px 5px 17px;
+.result-item__info {
+    padding: 4px 16px 5px 17px;
+}
+
+.result-item__registration {
+    padding: 4px 18px 5px 17px;
 }
 
 .result-item__info {
