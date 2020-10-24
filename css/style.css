@@ -477,7 +477,7 @@ input::-webkit-inner-spin-button {
     margin-top: -125px;
     display: grid;
     grid-template-columns: 1fr 150px 1fr;
-    column-gap: 50px;
+    column-gap: 52px;
     justify-items: center;
 }
  
@@ -540,6 +540,7 @@ input::-webkit-inner-spin-button {
 
 .copyright-text span {
     margin-top: -3px;
+    /* padding-right: 2px; */
 }
 
 .copyright-link {
@@ -705,6 +706,7 @@ input::-webkit-inner-spin-button {
 }
 
 .price-btn {
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     text-transform: uppercase;
     color: white;
@@ -712,7 +714,7 @@ input::-webkit-inner-spin-button {
     border: 2px solid white;
     border-radius: 2px;
     margin: 33px 0 0 85px;
-    padding: 7px 28px 9px 33px;
+    padding: 6px 34px 8px 33px;
     display: flex;
     flex-wrap: wrap;
     outline: none;
