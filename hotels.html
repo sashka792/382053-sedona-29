@@ -31,7 +31,7 @@
     <section class="search">
       <h2 class="vissually-hiden">Фильтр поиска гостиницы в городке Седоне</h2>
       <!-- Здесь будет форма с фильтрами для поиска -->
-      <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
+      <form class="filters-form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul class="infastructure-filter">
@@ -81,11 +81,11 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
+              <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок меньше"></div>
+              <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок больше"></div>
             </div>
           </div>
-          <button class="price-btn" type="submit">Показать</button>
+          <button class="price-btn" type="submit" aria-label="Показать результаты фильтра">Показать</button>
         </fieldset>
       </form>
     </section>
@@ -96,27 +96,27 @@
         <p class="results__caption">Найдено: 3</p>
         <p class="results__sorting-headline">Сортировка:</p>
         <ul>
-          <li><a class="results__sorting-item results-active">По цене</a></li>
-          <li><a class="results__sorting-item">По типу</a></li>
-          <li><a class="results__sorting-item">По рейтингу</a></li>
+          <li><button class="results__sorting-item results-active" type="button" aria-label="Сортировать по цене">По цене</button></li>
+          <li><button class="results__sorting-item" type="button" aria-label="Сортировать по типу">По типу</button></li>
+          <li><button class="results__sorting-item" type="button" aria-label="Сортировать по рейтингу">По рейтингу</button></li>
         </ul>
         <div class="buttons-wrapper">
-          <svg class="result-up" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
-          <svg class="result-down" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
+          <svg aria-hidden="true" focusable="false" type="button" tabindex="0" class="result-up" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 0L0 10h11L5.5 0z" fill="#CACACA"/></svg>
+          <svg aria-hidden="true" focusable="false" type="button" tabindex="0" class="result-down" width="11" height="10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.5 10L11 0H0l5.5 10z" fill="#CACACA"/></svg>
         </div>
       </div>
       
       <ul class="results-list">
         <li class="result-item">
-          <img class="result-item__pic" src="img/amara-resort.jpg" alt="Amara Resort & Spa">
+          <img class="result-item__pic" src="img/amara-resort.jpg" alt="Фотография Amara Resort & Spa">
           <div class="result-item-wrap">
             <h3 class="result-item__name">Amara Resort & Spa</h3>
             <div class="result-info">
               <span class="result-item__type">Гостиница</span>
               <span class="result-item__price">От 4000 Р.</span>
             </div>
-            <a class="result-item__info secondary" href="blank.html">Подробнее</a>
-            <a class="result-item__registration primary" href="blank.html">Забронировать</a>
+            <a class="result-item__info secondary" href="blank.html" aria-label="Узнать подробнее о гостинице Amara Resort">Подробнее</a>
+            <button class="result-item__registration primary" type="button" href="blank.html" aria-label="Забронировать гостиницу Amara Resort">Забронировать</button>
           </div>
           
           <div class="result-item__evaluation">
@@ -131,15 +131,15 @@
          
         </li>
         <li class="result-item">
-          <img class="result-item__pic" src="img/desert-Quail.jpg" alt="Desert Quail Inn">
+          <img class="result-item__pic" src="img/desert-Quail.jpg" alt="Фотография Desert Quail Inn">
           <div class="result-item-wrap">
             <h3 class="result-item__name">Desert Quail Inn</h3>
             <div class="result-info">
               <span class="result-item__type">Мотель</span>
               <span class="result-item__price">От 3000 Р.</span>
             </div>
-            <a class="result-item__info secondary" href="blank.html">Подробнее</a>
-            <a class="result-item__registration primary" href="blank.html">Забронировать</a>
+            <a class="result-item__info secondary" href="blank.html" aria-label="Узнать подробнее о мотеле Desert Quail Inn">Подробнее</a>
+            <button class="result-item__registration primary" type="button" href="blank.html" aria-label="Забронировать мотель Desert Quail Inn">Забронировать</button>
           </div>
           
           <div class="result-item__evaluation">
@@ -153,15 +153,15 @@
           
         </li>
         <li class="result-item">
-          <img class="result-item__pic" src="img/villas.jpg" alt="Villas at Poco Diablo">
+          <img class="result-item__pic" src="img/villas.jpg" alt="Фотография Villas at Poco Diablo">
           <div class="result-item-wrap">
             <h3 class="result-item__name">Villas at Poco Diablo</h3>
             <div class="result-info">
               <span class="result-item__type">Апартаменты</span>
               <span class="result-item__price">От 2000 Р.</span>
             </div>
-            <a class="result-item__info secondary" href="blank.html">Подробнее</a>
-            <a class="result-item__registration primary" href="blank.html">Забронировать</a>
+            <a class="result-item__info secondary" href="blank.html" aria-label="Узнать подробнее о апартаментах Villas at Poco Diablo">Подробнее</a>
+            <button class="result-item__registration primary" type="button" href="blank.html" aria-label="Забронировать апартаменты Villas at Poco Diablo">Забронировать</button>
           </div>
           
           <div class="result-item__evaluation">
@@ -184,16 +184,34 @@
     <section class="footer-social">
       <h2 class="vissually-hiden">Социальные сети</h2>
       <ul>
-        <li><a class="social-link_twitter secondary" href="#"></a></li>
-        <li><a class="social-link_fb secondary" href="#"></a></li>
-        <li><a class="social-link_yt secondary" href="#"></a></li>
+        <li>
+          <a class="social-link_twitter secondary" href="#" aria-label="Твиттер">
+            <svg aria-hidden="true" focusable="false" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
+            </svg>                
+          </a>
+        </li>
+        <li>
+          <a class="social-link_fb secondary" href="#" aria-label="Фейсбук">
+            <svg aria-hidden="true" focusable="false" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a class="social-link_yt secondary" href="#" aria-label="Ютуб">
+            <svg aria-hidden="true" focusable="false" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H17C18.65 0 20 1.35 20 3V13C20 14.65 18.65 16 17 16H3C1.35 16 0 14.65 0 13V3C0 1.35 1.35 0 3 0ZM6.027 4.002V11.998L15.014 8L6.027 4.002Z" fill="white"/>
+            </svg>
+          </a>
+        </li>
       </ul>
     </section>
     <section class="footer-copyright">
       <h2 class="vissually-hiden">Разработчик</h2>
       <p class="copyright-text">
         Website by
-        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
+        <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка HTML Academy">
           <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
       </p>
