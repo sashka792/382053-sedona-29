@@ -691,8 +691,38 @@ input::-webkit-inner-spin-button {
     color: var(--basic-white);
 }
 
-.price-range p {
-    padding: 0px 0px 0 15px;
+.price-min,
+.price-max {
+    margin-top: -2px;
+    margin-right: 4px;
+}
+
+.price-max {
+    margin-right: -4px;
+}
+
+.price-min {
+    padding-left: 28px;
+}
+
+input[type="number"].price-min__num,
+input[type="number"].price-max__num {
+   padding: 0px;
+   background-color: transparent;
+   border: none;
+   width: 50px;
+   color: white;
+   font-weight: 400;
+   text-align: left;
+}
+
+.price-min__num::placeholder, 
+.price-max__num::placeholder {
+    color: var(--basic-white);
+    font: inherit;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
 }
 
 .price-min {
@@ -705,10 +735,11 @@ input::-webkit-inner-spin-button {
     content: '';
     height: 22px;
     width: 2px;
-    bottom: 0;
-    left: 106px;
+    bottom: 2px;
+    left: 121px;
     background: var(--basic-white);
 }
+
 .price-controls {
     position: relative;
 }

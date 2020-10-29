@@ -6,7 +6,7 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
@@ -71,11 +71,20 @@
           <div class="price-filter">
             <div class="price-range">
               <p class="price-min">
+                <label for="min-price">от</label>
+                <input type="number" class="price-min__num" placeholder="0" min="0" name="min-value" id="min-price">
+              </p>
+              <p class="price-max">
+                <label for="max-price">до</label>
+                <input type="number" class="price-max__num" placeholder="3000" min="0" name="max-value" id="max-price">
+              </p>
+              
+              <!-- <p class="price-min">
                 от <span class="price-min__num">0</span>
               </p>
               <p class="price-max">
                 до <span class="price-max__num">3000</span>
-              </p>
+              </p> -->
             </div>
             <div class="price-controls">
               <div class="scale">
