@@ -321,9 +321,11 @@ img {
     color: var(--basic-black);
     padding: 56px 0 32px;
 }
+
 .registration-info {
     line-height: 26px;
 }
+
 .registration-button {
     text-transform: uppercase;
     display: inline-block;
@@ -337,7 +339,17 @@ img {
     cursor: pointer;
 }
 
+.d-none {
+    display: none;
+}
+
+.error {
+    -webkit-animation: shake 0.6s;
+            animation: shake 0.6s;
+}
+
 .registration-form {
+    /* display: block; */
     position: absolute;
     left: 0;
     right: 0;
@@ -345,11 +357,39 @@ img {
     line-height: 26px;
     margin: 0 auto;
     max-width: 458px;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     background: #FFFFFF;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px;
+    -webkit-animation: drop 0.6s forwards;
+            animation: drop 0.6s forwards;
+}
+
+@-webkit-keyframes drop {
+    0% { transform: translateY(-200px); opacity: 0;}
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); opacity: 1;}
+}
+
+@keyframes drop {
+    0% { transform: translateY(-200px); opacity: 0;}
+    70% { transform: translateY(30px); }
+    90% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); opacity: 1;}
+}
+
+@-webkit-keyframes shake {
+    0%, 100%                { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px); }
+}
+
+@keyframes shake {
+    0%, 100%                { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+    20%, 40%, 60%, 80%      { transform: translateX(10px); }
 }
 
 .registration-item {
@@ -409,12 +449,19 @@ input::-webkit-calendar-picker-indicator {
     right: 65px;
 }
 
-.registration-item:hover path,
-.registration-item:focus path {
+.calendar-icon:hover path,
+.adults-minus:hover path,
+.adults-plus:hover path,
+.children-minus:hover path,
+.children-plus:hover path {
     fill: var(--basic-black);
 }
 
-.registration-item:active path {
+.calendar-icon:active path,
+.adults-minus:active path,
+.adults-plus:active path,
+.children-minus:active path,
+.children-plus:active path {
     fill: var(--primary-color);
 }
 
@@ -505,6 +552,7 @@ input::-webkit-inner-spin-button {
     -moz-column-gap: 52px;
          column-gap: 52px;
     justify-items: center;
+    z-index: 1;
 }
  
 .footer-contacts,
@@ -714,6 +762,22 @@ input[type="number"].price-max__num {
    color: white;
    font-weight: 400;
    text-align: left;
+}
+
+.price-min__num::-webkit-input-placeholder, .price-max__num::-webkit-input-placeholder {
+    color: var(--basic-white);
+    font: inherit;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+}
+
+.price-min__num::-moz-placeholder, .price-max__num::-moz-placeholder {
+    color: var(--basic-white);
+    font: inherit;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
 }
 
 .price-min__num::placeholder, 
