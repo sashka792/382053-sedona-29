@@ -545,6 +545,12 @@ input::-webkit-inner-spin-button {
     padding: 17px 196px;    
 }
 
+.map {
+    width: 1200px;
+    height: 594px;
+    background: var(--accent-color) url(../img/map.jpg) no-repeat;
+}
+
 /* Footer */
 
 .main-footer {
