@@ -337,10 +337,18 @@ img {
     border: none;
     margin: 41px 0 0;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 
 .d-none {
     display: none;
+}
+
+.d-block {
+    display: block;
+    -webkit-animation: drop 0.6s forwards;
+            animation: drop 0.6s forwards;
 }
 
 .error {
@@ -349,7 +357,6 @@ img {
 }
 
 .registration-form {
-    /* display: block; */
     position: absolute;
     left: 0;
     right: 0;
@@ -357,27 +364,25 @@ img {
     line-height: 26px;
     margin: 0 auto;
     max-width: 458px;
-    /* display: flex; */
     flex-wrap: wrap;
+    z-index: 1;
     background: #FFFFFF;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     padding: 55px;
-    -webkit-animation: drop 0.6s forwards;
-            animation: drop 0.6s forwards;
 }
 
 @-webkit-keyframes drop {
-    0% { transform: translateY(-200px); opacity: 0;}
-    70% { transform: translateY(30px); }
+    0% { transform: translateY(-200px); opacity: 0; }
+    70% { transform: translateY(30px); opacity: .5; }
     90% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); opacity: 1;}
+    100% { transform: translateY(0px); opacity: 1; }
 }
 
 @keyframes drop {
-    0% { transform: translateY(-200px); opacity: 0;}
-    70% { transform: translateY(30px); }
+    0% { transform: translateY(-200px); opacity: 0; }
+    70% { transform: translateY(30px); opacity: .8; }
     90% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); opacity: 1;}
+    100% { transform: translateY(0px); opacity: 1; }
 }
 
 @-webkit-keyframes shake {
