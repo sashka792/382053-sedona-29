@@ -495,7 +495,7 @@ input[type='number'] {
     background-color: #F2F2F2;
     border: none;
     width: 114px;
-    padding: 6px 0px 6px 0px;
+    padding: 4px 0px 6px 0px;
     border: 2px solid transparent;
 }
 
@@ -540,7 +540,7 @@ input::-webkit-inner-spin-button {
     font-weight: 700;
     font-size: 21px;
     text-transform: uppercase;
-    margin-top: 21px;
+    margin-top: 23px;
     border: none;
     padding: 17px 196px;    
 }
