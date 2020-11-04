@@ -186,7 +186,7 @@ img {
 .welcome::after {
     content: url(../img/background-shape.svg);
     position: relative;
-    top: 17px;
+    top: 18px;
 }
 
 .welcome__title {
